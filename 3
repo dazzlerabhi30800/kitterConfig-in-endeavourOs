@@ -6,12 +6,13 @@ bold_italic_font auto
 
 font_size 14.0
 
+
 # disable terminal sound
 enable_audio_bell no
 
 
 # adjusting font & line height
-modify_font cell_height 115%
+modify_font cell_height 130%
 
 
 
@@ -30,9 +31,7 @@ cursor_text_color #111111
 
 cursor_shape underline 
 
-shell_integration no-cursor
-
-cursor_underline_thickness 1.2
+cursor_underline_thickness 1.5
 
 
 scrollback_lines 2000
@@ -46,18 +45,12 @@ detect_urls yes
 
 #show_hyperlink_targets
 
-open_url_with default
 
-copy_on_select yes 
-copy_on_select a1
-map shift+cmd+v paste_from_buffer a1
-
-paste_actions quote-urls-at-prompt
+copy_on_select no
 
 
-background_opacity .87
-#include dracula.conf
-include tokyonight.conf
+background_opacity 0.91
+include dracula.conf
 
 
 sync_to_monitor yes
